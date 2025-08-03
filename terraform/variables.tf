@@ -12,5 +12,5 @@ variable "ami_id" {
 variable "environment" {
   description = "Environment name (dev, staging, prod)"
   type        = string
-  default     = "dev"
+  default     = "10.0.0.0/16"
 }
