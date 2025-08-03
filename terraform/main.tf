@@ -13,3 +13,9 @@ module "s3_bucket" {
   source      = "./modules/s3"
   bucket_name = "sre-demo-bucket-${var.environment}"
 }
+
+module "vpc" {
+  source      = "./modules/vpc"
+  cidr_block  = var.vpc_cidr_block
+  environment = var.environment
+}
